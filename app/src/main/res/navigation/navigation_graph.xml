@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.foodbasket.magpie.screens.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.foodbasket.magpie.screens.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addNewFoodFragment"
+            app:destination="@id/addNewFoodFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_editFoodFragment"
+            app:destination="@id/editFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewFoodFragment"
+        android:name="com.example.foodbasket.magpie.screens.AddNewFoodFragment"
+        android:label="fragment_add_new_food"
+        tools:layout="@layout/fragment_add_new_food" >
+        <action
+            android:id="@+id/action_addNewFoodFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.foodbasket.magpie.screens.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_foodFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFoodFragment"
+        android:name="com.example.foodbasket.magpie.screens.EditFoodFragment"
+        android:label="fragment_edit_food"
+        tools:layout="@layout/fragment_edit_food" >
+        <action
+            android:id="@+id/action_editFoodFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
