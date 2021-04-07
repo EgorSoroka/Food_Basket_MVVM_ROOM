@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_startFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_aboutTheApplication"
+            app:destination="@id/aboutTheApplication" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -58,5 +61,14 @@
         <action
             android:id="@+id/action_editFoodFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutTheApplication"
+        android:name="com.example.foodbasket.magpie.screens.AboutTheApplication"
+        android:label="fragment_about_the_application"
+        tools:layout="@layout/fragment_about_the_application" >
+        <action
+            android:id="@+id/action_aboutTheApplication_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
 </navigation>

@@ -5,4 +5,7 @@
     <dimen name="item_food_name">20sp</dimen>
     <dimen name="app_margin">16dp</dimen>
     <dimen name="item_text_food">16sp</dimen>
+    <dimen name="hello_text_size">20sp</dimen>
+    <dimen name="start_margin">4dp</dimen>
+    <dimen name="about_the_application_size">22sp</dimen>
 </resources>

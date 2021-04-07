@@ -6,4 +6,12 @@
     <string name="shelf_life">shelf life</string>
     <string name="categories">categories</string>
     <string name="btn_add">Add</string>
+    <string name="hello_user_text">Hello User</string>
+    <string name="start_counter_text">In your cart:</string>
+    <string name="hints_counter">10</string>
+    <string name="start_counter_end">products!</string>
+    <string name="open_basket">Open basket</string>
+    <string name="start_counter">null</string>
+    <string name="about_the_application">About the application!</string>
+    <string name="open_information">open information</string>
 </resources>
