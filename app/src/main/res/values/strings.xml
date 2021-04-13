@@ -14,4 +14,5 @@
     <string name="start_counter">null</string>
     <string name="about_the_application">About the application!</string>
     <string name="open_information">open information</string>
+    <string name="app_title">Food Basket</string>
 </resources>

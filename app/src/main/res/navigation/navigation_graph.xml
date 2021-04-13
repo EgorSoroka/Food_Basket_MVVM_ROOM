@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.foodbasket.magpie.screens.StartFragment"
+        android:name="com.example.foodbasket.magpie.screens.start.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
