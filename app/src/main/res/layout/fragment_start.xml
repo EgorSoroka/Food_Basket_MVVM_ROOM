@@ -65,6 +65,7 @@
     </LinearLayout>
 
     <ImageButton
+        android:id="@+id/btn_open_basket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/app_margin"

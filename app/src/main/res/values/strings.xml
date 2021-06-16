@@ -15,4 +15,5 @@
     <string name="about_the_application">About the application!</string>
     <string name="open_information">open information</string>
     <string name="app_title">Food Basket</string>
+    <string name="toast_enter_name_food">Add name food!!</string>
 </resources>

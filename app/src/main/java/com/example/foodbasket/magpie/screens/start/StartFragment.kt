@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.foodbasket.magpie.R
 import com.example.foodbasket.magpie.databinding.FragmentStartBinding
-
+import com.example.foodbasket.magpie.utilits.APP_ACTIVITY
 
 class StartFragment : Fragment() {
 
@@ -27,8 +27,24 @@ class StartFragment : Fragment() {
         initialization()
     }
 
+
     private fun initialization() {
         mViewModel = ViewModelProvider(this).get(StartFragmentViewModel::class.java)
+        mViewModel.initDatabase()
+        mBinding.btnAboutTheApp.setOnClickListener {
+            APP_ACTIVITY.navController.navigate(R.id.action_startFragment_to_aboutTheApplication)
+        }
+        mBinding.btnOpenBasket.setOnClickListener {
+            APP_ACTIVITY.navController.navigate(R.id.action_startFragment_to_mainFragment)
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
+
+
+
 

@@ -1,4 +1,4 @@
-package com.example.foodbasket.magpie.screens
+package com.example.foodbasket.magpie.screens.edit_food
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.foodbasket.magpie.R
 
-
-class MainFragment : Fragment() {
-
+class EditFoodFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_edit_food, container, false)
     }
+
 }

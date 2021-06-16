@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/item_food_text"
+            android:id="@+id/item_food_quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/app_margin"
@@ -40,26 +40,26 @@
             tools:text="quantity_Food"
             android:textColor="@color/design_default_color_primary"/>
         <TextView
-            android:id="@+id/shelf_life"
+            android:id="@+id/item_shelf_life"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="25/04/21"
             android:layout_margin="@dimen/app_margin"
             android:textSize="@dimen/item_text_food"
-            app:layout_constraintTop_toBottomOf="@+id/item_food_text"
+            app:layout_constraintTop_toBottomOf="@+id/item_food_quantity"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:textColor="@color/design_default_color_primary"
             />
         <TextView
-            android:id="@+id/categories"
+            android:id="@+id/item_categories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Grocery"
             android:layout_margin="@dimen/app_margin"
             android:textSize="@dimen/item_text_food"
             android:gravity="end"
-            app:layout_constraintTop_toBottomOf="@+id/shelf_life"
+            app:layout_constraintTop_toBottomOf="@+id/item_shelf_life"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
